@@ -1,26 +1,16 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
   }
-  body {
-    color: white;
-    background: black;
+  .animation-delay-5000 {
+    animation-delay: 5s;
   }
+}
+
+.hyperlink {
+  @apply cursor-pointer text-navy-500 hover:text-navy-500 hover:underline;
 }
