@@ -88,6 +88,7 @@ const ExperienceLayout = () => {
             href="https://www.linkedin.com/in/kyle-chin-527959231/"
             className="hyperlink"
             target="_blank"
+            rel="noreferrer"
           >
             LinkedIn
           </a>{" "}
@@ -108,7 +109,7 @@ const ExperienceLayout = () => {
       </div>
       <div className="mx-10 mt-6 mb-12 md:hidden grid grid-cols-1">
         {otherJobs.map((job, index) => (
-          <div className="mt-6">
+          <div className="mt-6" key={index}>
             <p className="text-2xl">{job.employer}</p>
             <p className="text-4xl font-bold">{job.position}</p>
             <p className="text-lg font-light">{job.date}</p>

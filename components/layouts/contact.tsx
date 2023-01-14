@@ -57,6 +57,7 @@ const ContactLayout = () => {
                 href="https://www.linkedin.com/in/kyle-chin-527959231/"
                 className="hyperlink"
                 target="_blank"
+                rel="noreferrer"
               >
                 Kyle Chin
               </a>
@@ -69,6 +70,7 @@ const ContactLayout = () => {
                 href="https://github.com/MoleXprof"
                 className="hyperlink"
                 target="_blank"
+                rel="noreferrer"
               >
                 Kyle Chin
               </a>
