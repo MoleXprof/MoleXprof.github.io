@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { classnames } from "../utils";
 import { headerOptions } from "./constants/constants";
+import Image from "next/image";
 
 type HeaderProps = {
   currentTab: string;
@@ -32,10 +33,12 @@ const Header = ({ currentTab }: HeaderProps) => {
       </ul>
 
       <div className="md:hidden flex flex-1 justify-end items-center">
-        <img
+        <Image
           src={toggle ? "images/x.png" : "/images/hamburger.png"}
           alt="menu"
           className="w-7 h-7 mr-4 object-contain"
+          width={100}
+          height={100}
           onClick={() => setToggle((prev) => !prev)}
         />
         <div
