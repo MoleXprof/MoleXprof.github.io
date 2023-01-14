@@ -22,7 +22,7 @@ const ContactLayout = () => {
         title="What's Next?"
         titleClassName="text-purple-700"
         backgroundTitle="What's Next?"
-        subTitle="I am currently looking for my second co-op placement for this summer of 2023."
+        subTitle="I am currently looking for my second co-op placement for the summer of 2023."
       />
       <div className="mt-44 md:mx-20 mx-10 divide-y">
         <ContactInfo

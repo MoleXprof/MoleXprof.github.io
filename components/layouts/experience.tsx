@@ -8,7 +8,6 @@ import Hero from "../hero";
 import CircularProgress from "../circularProgress";
 import Footer from "../footer";
 import JobText from "../jobText";
-import Link from "next/link";
 
 const ExperienceLayout = () => {
   const router = useRouter();
@@ -48,9 +47,9 @@ const ExperienceLayout = () => {
           description="I developed and fixed small front-end components based on the requests from renowned international institutions to keep them happy and loyal. Furthermore, I constructed new statically generated pages for the B2C website to help improve TutorOcean's SEO results to attract x10 more the potential individuals globally. Here are the following results "
         />
       </div>
-      <div className="font-light md:ml-20 mx-10 text-lg">
+      <div className="font-light md:ml-20 mx-10 md:text-xl text-lg">
         (click{" "}
-        <a className="hyperlink" href="https://tutorocean.com/topics">
+        <a className="hyperlink" href="https://tutorocean.com/topics" target="_blank" rel="noreferrer">
           link
         </a>{" "}
         to view page and check out the related topics pages that I also worked
@@ -72,8 +71,15 @@ const ExperienceLayout = () => {
           right={false}
           title="Mobile App Developer"
           date="2022/05 - 2022/08"
-          description="I developed small front-end services for the Android and iOS TutorOcean mobile application to enhance UI quality. As well, I resolved minor bugs and issues on the iOS applications with SwiftUI to improve the overall user experience for customers."
+          description="I developed small front-end services for the Android and iOS TutorOcean mobile application to enhance UI quality. As well, I resolved minor bugs and issues on the iOS applications with SwiftUI to improve the overall user experience for customers"
         />
+      </div>
+      <div className="font-light md:ml-20 mx-10 md:text-xl text-lg">
+        (click{" "}
+        <a className="hyperlink" href="https://apps.apple.com/ca/app/tutorocean/id1480876532" target="_blank" rel="noreferrer">
+          link
+        </a>{" "}
+        to view the iOS Tutor Ocean App).
       </div>
       <SubHeader
         title="Other Experiences"

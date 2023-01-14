@@ -63,13 +63,13 @@ const Home = () => {
         right
         title="Sports & Fitness"
         category="Passions"
-        text={`Ever since I was young, I've always loved playing sports. For as long as I can remember, I have been playing hockey and soccer. I enjoy playing hockey the most, since I've grown to love the sport and have met many of my longest friends through hockey. I also love playing basketball, volleyball, and skiing. Due to the restrictions of the pandemic I was unable to play many of my sports, thus I started trying and getting into other sports such as golf, rock climbing, and, if you count it as a sport, chess.`}
+        text={`Ever since I was young, I've always loved playing sports. For as long as I can remember, I have been playing hockey and soccer. I enjoy playing hockey the most because along the way, I have met many of my closest friends through the sport. I also love playing basketball, volleyball, and skiing. Due to the restrictions of the pandemic I was unable to play many of my sports, thus I started trying and getting into other sports such as golf, rock climbing, and, if you count it as a sport, chess.`}
       />
       <Card
         right={false}
         title="Anime & Manga"
         category="Interests"
-        text={`On my spare time, I enjoy spending time with family and friends. Though, ever since I was young I have always loved the mediums of anime and manga. I grew up watching the Pokémon and Yu-Gi-Oh show and was later introduced to mangas by friends and family members. It has become a big aspect of my life, since it is an something I thoroughly enjoy whenever I get free time.`}
+        text={`On my spare time, I enjoy spending time with family and friends. Though, ever since I was young I have always loved the mediums of anime and manga. I grew up watching the Pokémon and Yu-Gi-Oh shows and was later introduced to mangas by friends and family members. It has become a big aspect of my life, since it is an something I thoroughly enjoy whenever I get free time.`}
       />
       <ImageCarousel
         className="mb-10 mt-16"
