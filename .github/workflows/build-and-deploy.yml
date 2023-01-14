@@ -28,8 +28,7 @@ jobs:
           touch ./out/.nojekyll
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: out # The folder the action should deploy.
+          publish_dir: ./out
