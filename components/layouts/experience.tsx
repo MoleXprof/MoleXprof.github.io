@@ -89,7 +89,7 @@ const ExperienceLayout = () => {
       />
       <div className="md:ml-20 ml-10">
         <p className="font-light md:text-lg text-md">
-          <b className="font-bold">*</b>to go{" "}
+          <b className="font-bold">*</b>go to{" "}
           <a
             href="https://www.linkedin.com/in/kyle-chin-527959231/"
             className="hyperlink"
