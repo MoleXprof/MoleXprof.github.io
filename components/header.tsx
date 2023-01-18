@@ -34,7 +34,7 @@ const Header = ({ currentTab }: HeaderProps) => {
 
       <div className="md:hidden flex flex-1 justify-end items-center">
         <Image
-          src={toggle ? "images/x.png" : "/images/hamburger.png"}
+          src={toggle ? "/images/close.png" : "/images/menu.png"}
           alt="menu"
           className="w-7 h-7 mr-4 object-contain"
           width={100}
