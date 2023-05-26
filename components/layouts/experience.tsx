@@ -22,13 +22,21 @@ const ExperienceLayout = () => {
         <link rel="shortcut icon" href="/images/web-icon-circle.png" />
       </Head>
       <Header currentTab={domain[1]} />
-      <div className="ml-72">
-        <Image
-          className="absolute ml-96 mt-24 xl:opacity-10 hidden xl:block"
-          src="/images/tutorocean.png"
-          alt="TutorOcean logo"
-          width={350}
-          height={350}
+      <Hero
+        topText="2023/05 - PRESENT"
+        title="RossVideo"
+        backgroundTitle="RossVideo"
+        subTitle="Co-op Experience"
+        titleClassName="bg-red-600 inline-block text-transparent bg-clip-text"
+        backgroundColour="bg-red-600"
+        flip
+      />
+      <div className="mt-16 mb-48">
+        <JobText
+          right
+          title="Test Automation Developer"
+          date="2023/05 - PRESENT"
+          description="I create automation tests for API endpoints. I will be working on more API tests and UI tests. Furthermore, I will be setting up the mobile test environment from scratch."
         />
       </div>
       <Hero

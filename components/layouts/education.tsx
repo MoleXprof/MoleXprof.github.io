@@ -26,7 +26,7 @@ const EducationLayout = () => {
             title="Carleton University"
             backgroundTitle="Carleton University"
             subTitle="Bachelors of Computer Science: Software Engineering Stream"
-            text="CGPA: 10.68/12"
+            text="CGPA: 10.81/12"
             titleClassName="text-red-600"
             backgroundColour="bg-red-600"
           />
