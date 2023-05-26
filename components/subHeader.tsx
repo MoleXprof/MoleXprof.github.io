@@ -1,5 +1,4 @@
 import { classnames } from "../utils";
-import Link from "next/link";
 
 type SubHeaderProps = {
   title: string;

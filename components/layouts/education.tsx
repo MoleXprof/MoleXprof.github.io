@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Hero from "../hero";
 import Footer from "../footer";
-import Dots from "../dots";
 
 const EducationLayout = () => {
   const router = useRouter();

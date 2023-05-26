@@ -60,7 +60,7 @@ const Hero = ({
             <div
               className={classnames(
                 backgroundColour,
-                "md:h-3 h-2 md:w-20 w-16 mt-3 mx-10 md:mx-0"
+                "md:h-3 h-2 md:w-20 w-16 mt-3 md:mx-0"
               )}
             />
           </div>

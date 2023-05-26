@@ -1,5 +1,3 @@
-import { classnames } from "../utils";
-
 type CardProps = {
   right: boolean;
   title: string;
