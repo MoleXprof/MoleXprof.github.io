@@ -3,7 +3,6 @@ import Header from "../header";
 import { otherJobs } from "../constants/constants";
 import { useRouter } from "next/router";
 import SubHeader from "../subHeader";
-import Image from "next/image";
 import Hero from "../hero";
 import CircularProgress from "../circularProgress";
 import Footer from "../footer";

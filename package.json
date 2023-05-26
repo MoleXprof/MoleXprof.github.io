@@ -20,7 +20,8 @@
     "react-dom": "18.2.0",
     "react-multi-carousel": "^2.8.2",
     "react-native": "^0.71.0",
-    "react-native-email-link": "^1.14.3"
+    "react-native-email-link": "^1.14.3",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/react": "18.0.26",

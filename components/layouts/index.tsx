@@ -31,10 +31,11 @@ const Home = () => {
           topText="Hello, my name is"
           title="Kyle Chin"
           backgroundTitle="Programmer"
-          subTitle="I am a computer programmer"
+          subTitle="I am a "
           text="An ethusiatic programmer that is passionate about front-end web designs and is looking to further my technical skills. As an individual, I value hard work, discipline, and respect above all else. These ideals guide my approach to problem solving and life in general."
           titleClassName="text-yellow-400"
           backgroundColour="bg-yellow-400"
+          typing
         />
         <div className="flex">
           <div className="relative filter blur-xl ml-20 mt-32 absolute">

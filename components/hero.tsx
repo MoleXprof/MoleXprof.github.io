@@ -1,4 +1,5 @@
 import { classnames } from "../utils";
+import Typewriter from 'typewriter-effect';
 
 type HeroProps = {
   topText?: string;
@@ -9,6 +10,7 @@ type HeroProps = {
   backgroundColour?: string;
   backgroundTitle: string;
   flip?: boolean
+  typing?: boolean
 };
 
 const Hero = ({
@@ -19,7 +21,8 @@ const Hero = ({
   subTitle,
   text,
   titleClassName,
-  flip
+  flip,
+  typing
 }: HeroProps) => {
   return (
     <div>
@@ -85,9 +88,22 @@ const Hero = ({
                 {title}
               </h1>
             </div>
-            <p className="md:mt-4 mt-3 md:text-3xl text-2xl mx-10 md:mx-0">
-              {subTitle}
-            </p>
+            <div className="flex flex-row">
+              <p className="md:mt-4 mt-3 md:text-3xl text-2xl ml-10 md:mx-0">
+                {subTitle}
+              </p>
+              {typing ? (
+                <div className="text-2xl text-black md:mt-4 mt-3 md:text-3xl md:ml-2 ml-2">
+                <Typewriter
+                  options={{
+                    strings: ['Software Developer', 'Student', 'Chips Enthusiast'],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </div>
+              ) : ("")}
+            </div>
             {text && (
               <p className="md:mt-12 mt-8 md:text-xl text-lg max-w-2xl font-light mx-10 md:mx-0">
                 {text}
