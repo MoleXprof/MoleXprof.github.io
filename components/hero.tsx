@@ -1,4 +1,4 @@
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
@@ -7,27 +7,28 @@ const Hero = () => {
         <p className="text-lg sm:text-2xl font-medium text-black font-mono">
           Hello, my name is
         </p>
-        <h1 className="text-accent-100 font-extrabold text-5xl md:text-7xl mt-2 flex">
-          Kyle Chin <h2 className='font-mono -ml-2 text-accent-200'>.</h2>
-        </h1>
+        <div className="flex flex-row">
+          <h1 className="text-accent-100 font-extrabold text-5xl md:text-7xl mt-2 flex">
+            Kyle Chin
+          </h1>
+          <h2 className="font-mono -ml-2 text-accent-200">.</h2>
+        </div>
         <div className="flex flex-row mt-3">
-          <p className="sm:text-xl text-lg font-medium font-mono mt-2">
-            A
-          </p>
+          <p className="sm:text-xl text-lg font-medium font-mono mt-2">A</p>
           <div className="text-2xl sm:text-3xl md:ml-4 ml-3 text-black font-mono">
             <Typewriter
               options={{
-                strings: ['Software Developer', 'Student', 'Climber'],
+                strings: ["Software Developer", "Student", "Climber"],
                 autoStart: true,
-                loop: true
+                loop: true,
               }}
             />
           </div>
         </div>
-        <div className="md:h-3 h-2 md:w-20 w-16 mt-3 bg-accent-100"/>
+        <div className="md:h-3 h-2 md:w-20 w-16 mt-3 bg-accent-100" />
       </div>
     </div>
-  );  
+  );
 };
 
 export default Hero;

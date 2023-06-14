@@ -52,7 +52,7 @@ module.exports = {
           50: "#D4F1F4",
           100: "#2E8BC0",
           200: "#145DA0",
-          300: "#0C2D48"
+          300: "#0C2D48",
         },
         yellow: colors.yellow,
         azure: {

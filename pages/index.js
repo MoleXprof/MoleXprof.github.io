@@ -43,11 +43,11 @@ const Index = () => {
           </div>
         </div>
         <Projects />
-        <ContactBar/>
+        <ContactBar />
       </div>
       <Footer />
     </div>
-  )
+  );
 };
 
 export default Index;

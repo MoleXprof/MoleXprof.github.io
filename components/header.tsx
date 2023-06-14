@@ -2,7 +2,7 @@ import { useState } from "react";
 import { classnames } from "../utils";
 import { headerOptions } from "./constants/constants";
 import Image from "next/image";
-import { Link } from 'react-scroll'
+import { Link } from "react-scroll";
 
 type HeaderProps = {
   currentTab: string;
@@ -32,7 +32,7 @@ const Header = ({ currentTab }: HeaderProps) => {
                   "cursor-pointer text-base text-black ${index === headerOptions.length - 1 ? 'mr-0' : 'mr-10'} mr-10 hover:text-accent-200"
                 )}
               >
-                <Link 
+                <Link
                   href={nav.href}
                   key={nav.title}
                   to={nav.href}
@@ -77,7 +77,7 @@ const Header = ({ currentTab }: HeaderProps) => {
                       "hover:bg-gray-100 text-midnight-500 px-3 py-2 text-sm font-medium hover:text-accent-200"
                     )}
                   >
-                    <Link 
+                    <Link
                       href={option.href}
                       key={option.title}
                       to={option.href}
