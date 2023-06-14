@@ -11,10 +11,10 @@ const Hero = () => {
           Kyle Chin <h2 className='font-mono -ml-2 text-accent-200'>.</h2>
         </h1>
         <div className="flex flex-row mt-3">
-          <p className="sm:text-3xl text-2xl font-medium font-mono">
+          <p className="sm:text-xl text-lg font-medium font-mono mt-2">
             A
           </p>
-          <div className="text-2xl sm:text-3xl md:ml-5 ml-4 text-black font-mono">
+          <div className="text-2xl sm:text-3xl md:ml-4 ml-3 text-black font-mono">
             <Typewriter
               options={{
                 strings: ['Software Developer', 'Student', 'Climber'],

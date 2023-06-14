@@ -2,6 +2,7 @@ import { useState } from "react";
 import { classnames } from "../utils";
 import { headerOptions } from "./constants/constants";
 import Image from "next/image";
+import { Link } from 'react-scroll'
 
 type HeaderProps = {
   currentTab: string;
@@ -15,6 +16,8 @@ const Header = ({ currentTab }: HeaderProps) => {
       <button className="ml-5 sm:ml-10 bg-accent-100 text-white rounded-md px-6 py-2 shadow-lg hover:bg-accent-200 font-medium">
         Resume
       </button>
+
+      {/* monitor view */}
       <ul className="list-none md:flex hidden justify-end items-center flex-1">
         {headerOptions.map(
           (nav, index) =>
@@ -29,12 +32,21 @@ const Header = ({ currentTab }: HeaderProps) => {
                   "cursor-pointer text-base text-black ${index === headerOptions.length - 1 ? 'mr-0' : 'mr-10'} mr-10 hover:text-accent-200"
                 )}
               >
-                <a href={nav.href}>{nav.title}</a>
+                <Link 
+                  href={nav.href}
+                  key={nav.title}
+                  to={nav.href}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  {nav.title}
+                </Link>
               </li>
             )
         )}
       </ul>
-
+      {/* mobile view */}
       <div className="md:hidden flex flex-1 justify-end items-center">
         <Image
           src={toggle ? "/images/close.png" : "/images/menu.png"}
@@ -65,7 +77,16 @@ const Header = ({ currentTab }: HeaderProps) => {
                       "hover:bg-gray-100 text-midnight-500 px-3 py-2 text-sm font-medium hover:text-accent-200"
                     )}
                   >
-                    {option.title}
+                    <Link 
+                      href={option.href}
+                      key={option.title}
+                      to={option.href}
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                    >
+                      {option.title}
+                    </Link>
                   </a>
                 )
             )}

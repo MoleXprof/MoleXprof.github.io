@@ -21,6 +21,7 @@
     "react-multi-carousel": "^2.8.2",
     "react-native": "^0.71.0",
     "react-native-email-link": "^1.14.3",
+    "react-scroll": "^1.8.9",
     "remixicon": "^3.3.0",
     "typewriter-effect": "^2.19.0"
   },

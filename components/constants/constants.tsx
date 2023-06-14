@@ -123,12 +123,12 @@ export const headerOptions = [
   {
     title: "Projects",
     display: true,
-    href: "/projects",
+    href: "projects",
   },
   {
     title: "Contact",
     display: true,
-    href: "#contact",
+    href: "contact",
   },
 ];
 
