@@ -12,6 +12,9 @@ const Header = ({ currentTab }: HeaderProps) => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
+      <button className="ml-5 sm:ml-10 bg-accent-100 text-white rounded-md px-6 py-2 shadow-lg hover:bg-accent-200 font-medium">
+        Resume
+      </button>
       <ul className="list-none md:flex hidden justify-end items-center flex-1">
         {headerOptions.map(
           (nav, index) =>

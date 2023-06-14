@@ -27,8 +27,8 @@ const Hero = ({
   return (
     <div>
       {flip ? (
-        <div className="md:mr-20 text-midnight-500 text-right mr-10">
-          <p className="mt-24 text-lg md:text-2xl font-light md:mx-0">
+        <div className="md:mr-20 text-midnight-500 text-left mr-10">
+          <p className="mt-24 text-lg md:text-2xl font-semibold md:mx-0">
             {topText}
           </p>
           <h2 className="font-bold text-6xl md:text-6xl text-gray-100 ml-10 md:mx-0">
