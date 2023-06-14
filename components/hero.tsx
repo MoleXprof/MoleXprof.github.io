@@ -1,122 +1,31 @@
-import { classnames } from "../utils";
 import Typewriter from 'typewriter-effect';
 
-type HeroProps = {
-  topText?: string;
-  title: string;
-  subTitle?: string;
-  text?: string;
-  titleClassName: string;
-  backgroundColour?: string;
-  backgroundTitle: string;
-  flip?: boolean
-  typing?: boolean
-};
-
-const Hero = ({
-  backgroundColour,
-  backgroundTitle,
-  topText,
-  title,
-  subTitle,
-  text,
-  titleClassName,
-  flip,
-  typing
-}: HeroProps) => {
+const Hero = () => {
   return (
     <div>
-      {flip ? (
-        <div className="md:mr-20 text-midnight-500 text-left mr-10">
-          <p className="mt-24 text-lg md:text-2xl font-semibold md:mx-0">
-            {topText}
+      <div className="mx-5 sm:mx-10 mt-10 sm:mt-20 md:mt-40 lg:mt-52">
+        <p className="text-lg sm:text-2xl font-medium text-black font-mono">
+          Hello, my name is
+        </p>
+        <h1 className="text-accent-100 font-extrabold text-5xl md:text-7xl mt-2 flex">
+          Kyle Chin <h2 className='font-mono -ml-2 text-accent-200'>.</h2>
+        </h1>
+        <div className="flex flex-row mt-3">
+          <p className="sm:text-3xl text-2xl font-medium font-mono">
+            A
           </p>
-          <h2 className="font-bold text-6xl md:text-6xl text-gray-100 ml-10 md:mx-0">
-            {backgroundTitle}
-          </h2>
-          <div
-            className={classnames(
-              title === "Carleton University" ? "md:-mt-12 -mt-24" : "-mt-10"
-            )}
-          >
-            <h1
-              className={classnames(
-                titleClassName,
-                "font-bold text-6xl md:text-7xl ml-10 md:mx-0"
-              )}
-            >
-              {title}
-            </h1>
-          </div>
-          <p className="md:mt-4 mt-3 md:text-3xl text-2xl md:mx-0 ">
-            {subTitle}
-          </p>
-          {text && (
-            <p className="md:mt-12 mt-8 md:text-xl text-lg max-w-2xl font-light mx-10 md:mx-0">
-              {text}
-            </p>
-          )}
-          <div className="flex flex-row-reverse">
-            <div
-              className={classnames(
-                backgroundColour,
-                "md:h-3 h-2 md:w-20 w-16 mt-3 md:mx-0"
-              )}
+          <div className="text-2xl sm:text-3xl md:ml-5 ml-4 text-black font-mono">
+            <Typewriter
+              options={{
+                strings: ['Software Developer', 'Student', 'Climber'],
+                autoStart: true,
+                loop: true
+              }}
             />
           </div>
-          
         </div>
-      ) : (
-          <div className="md:ml-20 text-midnight-500">
-            <p className="mt-24 text-lg md:text-2xl font-light mx-10 md:mx-0">
-              {topText}
-            </p>
-            <h2 className="font-bold text-6xl md:text-6xl text-gray-100 ml-10 md:mx-0">
-              {backgroundTitle}
-            </h2>
-            <div
-              className={classnames(
-                title === "Carleton University" ? "md:-mt-12 -mt-24" : "-mt-10"
-              )}
-            >
-              <h1
-                className={classnames(
-                  titleClassName,
-                  "font-bold text-6xl md:text-7xl ml-10 md:mx-0"
-                )}
-              >
-                {title}
-              </h1>
-            </div>
-            <div className="flex flex-row">
-              <p className="md:mt-4 mt-3 md:text-3xl text-2xl ml-10 md:mx-0">
-                {subTitle}
-              </p>
-              {typing ? (
-                <div className="text-2xl text-black md:mt-4 mt-3 md:text-3xl md:ml-2 ml-2">
-                <Typewriter
-                  options={{
-                    strings: ['Software Developer', 'Student', 'Chips Enthusiast'],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </div>
-              ) : ("")}
-            </div>
-            {text && (
-              <p className="md:mt-12 mt-8 md:text-xl text-lg max-w-2xl font-light mx-10 md:mx-0">
-                {text}
-              </p>
-            )}
-            <div
-              className={classnames(
-                backgroundColour,
-                "md:h-3 h-2 md:w-20 w-16 mt-3 mx-10 md:mx-0"
-              )}
-            />
-          </div>
-      )}
+        <div className="md:h-3 h-2 md:w-20 w-16 mt-3 bg-accent-100"/>
+      </div>
     </div>
   );  
 };

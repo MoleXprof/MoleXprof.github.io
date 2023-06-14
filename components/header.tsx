@@ -26,7 +26,7 @@ const Header = ({ currentTab }: HeaderProps) => {
                     (currentTab == "" && nav.title == "About Me")
                     ? "font-bold"
                     : "font-normal",
-                  "cursor-pointer text-base text-black ${index === headerOptions.length - 1 ? 'mr-0' : 'mr-10'} mr-10"
+                  "cursor-pointer text-base text-black ${index === headerOptions.length - 1 ? 'mr-0' : 'mr-10'} mr-10 hover:text-accent-200"
                 )}
               >
                 <a href={nav.href}>{nav.title}</a>
@@ -47,7 +47,7 @@ const Header = ({ currentTab }: HeaderProps) => {
         <div
           className={classnames(
             toggle ? "flex" : "hidden",
-            `p-6 bg-gradient-to-r from-gray-200 to-gray-200 absolute top-16 right-0 mx-4 my-2 sidebar min-w-36`
+            `p-6 bg-gray-100 absolute top-16 right-0 mx-4 my-2 sidebar min-w-36`
           )}
         >
           <ul className="list-none flex flex-col justify-start items-end">
@@ -62,7 +62,7 @@ const Header = ({ currentTab }: HeaderProps) => {
                         (currentTab == "" && option.title == "About Me")
                         ? "font-bold"
                         : "font-normal",
-                      "hover:bg-gray-100 text-midnight-500 px-3 py-2 text-sm font-medium"
+                      "hover:bg-gray-100 text-midnight-500 px-3 py-2 text-sm font-medium hover:text-accent-200"
                     )}
                   >
                     {option.title}
