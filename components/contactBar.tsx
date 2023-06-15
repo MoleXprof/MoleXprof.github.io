@@ -7,7 +7,7 @@ const ContactBar = () => {
           Reach out to me!
         </h4>
       </div>
-      <div className="grid grid-cols-1 gap-12 mt-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-12 mt-6 md:grid-cols-2">
         <div className="flex flex-col items-center justify-center text-center">
           <span className="inline-block p-3 text-accent-200 rounded-full bg-gray-200">
             <svg
@@ -33,30 +33,6 @@ const ContactBar = () => {
               kkhc99@gmail.com
             </a>
           </div>
-        </div>
-        <div className="flex flex-col items-center justify-center text-center">
-          <span className="inline-block p-3 text-accent-200 rounded-full bg-gray-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-              />
-            </svg>
-          </span>
-          <p className="mt-2 sm:mt-3 text-black">Ottawa, Ontario</p>
         </div>
         <div className="flex flex-col items-center justify-center text-center">
           <span className="inline-block p-3 text-accent-200 rounded-full bg-gray-200">

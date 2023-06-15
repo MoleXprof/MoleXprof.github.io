@@ -2,7 +2,7 @@ import { useState } from "react";
 import { classnames } from "../utils";
 import { headerOptions } from "./constants/constants";
 import Image from "next/image";
-import { Link } from "react-scroll";
+import { Link } from 'react-scroll';
 
 type HeaderProps = {
   currentTab: string;
@@ -13,9 +13,9 @@ const Header = ({ currentTab }: HeaderProps) => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <button className="ml-5 sm:ml-10 bg-accent-100 text-white rounded-md px-6 py-2 shadow-lg hover:bg-accent-200 font-medium">
+      <a className="ml-5 sm:ml-10 bg-accent-100 text-white rounded-md px-6 py-2 shadow-lg hover:bg-accent-200 font-medium">
         Resume
-      </button>
+      </a>
 
       {/* monitor view */}
       <ul className="list-none md:flex hidden justify-end items-center flex-1">
@@ -26,7 +26,7 @@ const Header = ({ currentTab }: HeaderProps) => {
                 key={index}
                 className={classnames(
                   nav.title.toLowerCase() === currentTab.toLowerCase() ||
-                    (currentTab == "" && nav.title == "About Me")
+                    (currentTab == "" && nav.title == "About")
                     ? "font-bold"
                     : "font-normal",
                   "cursor-pointer text-base text-black ${index === headerOptions.length - 1 ? 'mr-0' : 'mr-10'} mr-10 hover:text-accent-200"
@@ -46,6 +46,7 @@ const Header = ({ currentTab }: HeaderProps) => {
             )
         )}
       </ul>
+
       {/* mobile view */}
       <div className="md:hidden flex flex-1 justify-end items-center">
         <Image

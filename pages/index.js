@@ -6,6 +6,7 @@ import Hero from "../components/hero";
 import Footer from "../components/footer";
 import ContactBar from "../components/contactBar";
 import Projects from "../components/projects";
+import ResumeBar from "../components/resumeBar";
 
 const Index = () => {
   const router = useRouter();
@@ -42,6 +43,7 @@ const Index = () => {
             </div>
           </div>
         </div>
+        <ResumeBar />
         <Projects />
         <ContactBar />
       </div>

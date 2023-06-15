@@ -106,14 +106,9 @@ export const topMangas = [
 
 export const headerOptions = [
   {
-    title: "About Me",
+    title: "About",
     display: true,
     href: "/",
-  },
-  {
-    title: "Education",
-    display: true,
-    href: "/education",
   },
   {
     title: "Experience",
