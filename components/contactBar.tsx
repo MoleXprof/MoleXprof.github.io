@@ -2,8 +2,8 @@ const ContactBar = () => {
   return (
     <div className="w-full justify-center items-center" id="contact">
       <div className="text-center my-4">
-        <h3 className="text-5xl font-bold text-accent-100">What's next?</h3>
-        <h4 className="text-2xl font-semibold text-gray-300">
+        <h3 className="text-3xl sm:text-5xl font-bold text-accent-100">What's next?</h3>
+        <h4 className="text-xl sm:text-2xl font-semibold text-gray-300 font-mono">
           Reach out to me!
         </h4>
       </div>

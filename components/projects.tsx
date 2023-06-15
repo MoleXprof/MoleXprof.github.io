@@ -4,8 +4,8 @@ import Image from "next/image";
 const Projects = () => {
   return (
     <div className="mx-5 sm:mx-10 my-16" id="projects">
-      <h2 className="font-bold text-5xl text-accent-100">Projects</h2>
-      <div className="mt-8 lg:w-1/2">
+      <h2 className="font-bold text-3xl sm:text-5xl text-accent-100">Projects</h2>
+      <div className="mt-4 sm:mt-8 max-w-xl border-b-8 border-accent-200">
         <a
           href="https://3devguys.github.io/"
           className="group relative block bg-gray-700 hover:bg-black"

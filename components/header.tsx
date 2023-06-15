@@ -48,7 +48,7 @@ const Header = ({ currentTab }: HeaderProps) => {
       </ul>
 
       {/* mobile view */}
-      <div className="md:hidden flex flex-1 justify-end items-center">
+      <div className="md:hidden flex flex-1 justify-end items-center z-10">
         <Image
           src={toggle ? "/images/close.png" : "/images/menu.png"}
           alt="menu"
@@ -60,7 +60,7 @@ const Header = ({ currentTab }: HeaderProps) => {
         <div
           className={classnames(
             toggle ? "flex" : "hidden",
-            `p-6 bg-gray-100 absolute top-16 right-0 mx-4 my-2 sidebar min-w-36`
+            `p-6 bg-gray-200 absolute top-16 right-0 mx-4 my-2 sidebar min-w-36`
           )}
         >
           <ul className="list-none flex flex-col justify-start items-end">
@@ -75,7 +75,7 @@ const Header = ({ currentTab }: HeaderProps) => {
                         (currentTab == "" && option.title == "About Me")
                         ? "font-bold"
                         : "font-normal",
-                      "hover:bg-gray-100 text-midnight-500 px-3 py-2 text-sm font-medium hover:text-accent-200"
+                      "hover:bg-gray-100 text-midnight-500 px-3 py-2 text-sm font-medium hover:text-accent-200 hover:rounded-md"
                     )}
                   >
                     <Link
