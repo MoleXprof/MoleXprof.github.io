@@ -111,7 +111,7 @@ export const headerOptions = [
     href: "/",
   },
   {
-    title: "Experience",
+    title: "Work",
     display: true,
     href: "/experience",
   },

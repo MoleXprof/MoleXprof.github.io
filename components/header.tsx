@@ -16,7 +16,20 @@ const Header = ({ currentTab }: HeaderProps) => {
       <a className="ml-5 sm:ml-10 bg-accent-100 text-white rounded-md px-6 py-2 shadow-lg hover:bg-accent-200 font-medium">
         Resume
       </a>
-
+      <div className="space-x-2 ml-2.5">
+          <a
+            href="https://www.linkedin.com/in/kyle-chin-527959231/"
+            className="text-accent-100 hover:text-accent-200"
+          >
+            <i className="ri-linkedin-box-fill text-4xl"></i>
+          </a>
+          <a
+            href="https://github.com/MoleXprof"
+            className="text-accent-100 hover:text-accent-200 text-4xl"
+          >
+            <i className="ri-github-fill"></i>
+          </a>
+        </div>
       {/* monitor view */}
       <ul className="list-none md:flex hidden justify-end items-center flex-1">
         {headerOptions.map(
@@ -25,11 +38,10 @@ const Header = ({ currentTab }: HeaderProps) => {
               <li
                 key={index}
                 className={classnames(
-                  nav.title.toLowerCase() === currentTab.toLowerCase() ||
-                    (currentTab == "" && nav.title == "About")
+                  nav.title.toLowerCase() === currentTab.toLowerCase()
                     ? "font-bold"
                     : "font-normal",
-                  "cursor-pointer text-base text-black ${index === headerOptions.length - 1 ? 'mr-0' : 'mr-10'} mr-10 hover:text-accent-200"
+                  "cursor-pointer text-base text-black ${index === headerOptions.length - 1 ? 'mr-0' : 'mr-10'} mr-10 hover:text-accent-200 hover:font-semibold"
                 )}
               >
                 <Link

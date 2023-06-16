@@ -7,8 +7,8 @@ const Hero = () => {
         <p className="text-lg sm:text-2xl font-medium text-black font-mono">
           Hello, my name is
         </p>
-        <div className="flex flex-row">
-          <h1 className="text-accent-100 font-extrabold text-5xl md:text-7xl mt-2 flex">
+        <div className="flex flex-row mt-2 text-5xl md:text-7xl">
+          <h1 className="text-accent-100 font-extrabold flex">
             Kyle Chin
           </h1>
           <h2 className="font-mono -ml-2 text-accent-200">.</h2>

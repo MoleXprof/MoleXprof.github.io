@@ -7,6 +7,7 @@ import Footer from "../components/footer";
 import ContactBar from "../components/contactBar";
 import Projects from "../components/projects";
 import ResumeBar from "../components/resumeBar";
+import Experience from "../components/experience"
 
 const Index = () => {
   const router = useRouter();
@@ -43,6 +44,7 @@ const Index = () => {
             </div>
           </div>
         </div>
+        <Experience />
         <ResumeBar />
         <Projects />
         <ContactBar />
