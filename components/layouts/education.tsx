@@ -25,7 +25,7 @@ const EducationLayout = () => {
             title="Carleton University"
             backgroundTitle="Carleton University"
             subTitle="Bachelors of Computer Science: Software Engineering Stream"
-            text="CGPA: 10.81/12"
+            text="CGPA: 10.86/12"
             titleClassName="text-red-600"
             backgroundColour="bg-red-600"
           />
@@ -42,7 +42,7 @@ const EducationLayout = () => {
       </div>
       <div className="md:ml-20 mx-10 md:mt-24 mt-8 text-lg max-w-3xl font-light">
         <p>
-          I am in my third year of my Bachelors of Computer Science at Carleton.
+          I am in my fourth year of my Bachelors of Computer Science at Carleton.
           With my co-op program adding an extra year to my studies, I am
           supposed to graduate in April 2025. I take pride in my studies and
           enjoy the many challenges that come with learning different

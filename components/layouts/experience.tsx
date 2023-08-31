@@ -22,7 +22,7 @@ const ExperienceLayout = () => {
       </Head>
       <Header currentTab={domain[1]} />
       <Hero
-        topText="2023/05 - PRESENT"
+        topText="2023/05 - 2023/08"
         title="RossVideo"
         backgroundTitle="RossVideo"
         subTitle="Co-op Experience"
@@ -35,7 +35,7 @@ const ExperienceLayout = () => {
           right
           title="Test Automation Developer"
           date="2023/05 - PRESENT"
-          description="I create automation tests for API endpoints. I will be working on more API tests and UI tests. Furthermore, I will be setting up the mobile test environment from scratch."
+          description="I developed and maintained API and UI test cases. I also helped create a new framework that applies OOP Principles."
         />
       </div>
       <Hero
