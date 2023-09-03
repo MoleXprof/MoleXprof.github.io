@@ -26,9 +26,9 @@ const JobText = ({ right, title, date, description }: JobTextProps) => {
         <div className="mt-16">
           <h3 className="font-bold text-4xl">{title}</h3>
           <p className="md:text-xl text-lg font-light">{date}</p>
-          <p className="md:text-xl text-lg font-light mt-4 max-w-3xl">
+          <div className="md:text-xl text-lg font-light mt-4 max-w-3xl">
             {description}
-          </p>
+          </div>
         </div>
       )}
     </div>

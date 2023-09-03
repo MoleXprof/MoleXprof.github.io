@@ -46,21 +46,17 @@ const ExperienceLayout = () => {
         titleClassName="bg-gradient-to-t from-cyan-500 to-blue-500 inline-block text-transparent bg-clip-text"
         backgroundColour="bg-cyan-500"
       />
-      <div className="mt-36">
+      <div className="mt-16">
         <JobText
           right={false}
           title="Front-end Web Developer - QuadC"
           date="2022/09 - 2022/12"
-          description="I developed and fixed small front-end components based on the requests from renowned international institutions to keep them happy and loyal. Furthermore, I constructed new statically generated pages for the B2C website to help improve TutorOcean's SEO results to attract x10 more the potential individuals globally. Here are the following results "
+          description=
+          {<div>
+            I developed and fixed small front-end components based on the requests from renowned international institutions to keep them happy and loyal. Furthermore, I constructed new statically generated pages for the B2C website to help improve TutorOcean's SEO results to attract x10 more the potential individuals globally. Here are the following results
+            (click <a className="hyperlink" href="https://tutorocean.com/topics" target="_blank" rel="noreferrer"> here </a> to view page and check out the related topics pages that I also worked on):
+          </div>}
         />
-      </div>
-      <div className="font-light md:ml-20 mx-10 md:text-xl text-lg">
-        (click{" "}
-        <a className="hyperlink" href="https://tutorocean.com/topics" target="_blank" rel="noreferrer">
-          link
-        </a>{" "}
-        to view page and check out the related topics pages that I also worked
-        on):
       </div>
       <div className="flex flex-row py-8 mt-6 justify-center">
         <CircularProgress />

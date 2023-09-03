@@ -70,7 +70,7 @@ const Home = () => {
         right={false}
         title="Anime & Manga"
         category="Interests"
-        text={`On my spare time, I enjoy spending time with family and friends. Though, ever since I was young I have always loved the mediums of anime and manga. I grew up watching the Pokémon and Yu-Gi-Oh shows and was later introduced to mangas by friends and family members. It has become a big aspect of my life, since it is an something I thoroughly enjoy whenever I get free time.`}
+        text={`On my spare time, I enjoy spending time with family and friends. Though, ever since I was young I have always loved the mediums of anime and manga. I grew up watching the Pokémon and Yu-Gi-Oh shows and was later introduced to manga by friends and family members. It has become a big aspect of my life, since it is an something I thoroughly enjoy whenever I get free time.`}
       />
       <ImageCarousel
         className="mb-10 mt-16"
