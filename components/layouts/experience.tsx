@@ -104,7 +104,7 @@ const ExperienceLayout = () => {
            to view full resume
         </p>
       </div>
-      <div className="flex flex-row md:mx-20 mx-10 md:my-24 my-12 md:flex">
+      <div className="md:flex flex-row md:mx-20 mx-10 md:my-24 my-12 hidden">
         {otherJobs.map((job, index) => (
           <div className="flex flex-row" key={index}>
             <div className="md:mx-12 mx-6">

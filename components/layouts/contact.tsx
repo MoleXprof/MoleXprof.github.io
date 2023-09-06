@@ -24,23 +24,23 @@ const ContactLayout = () => {
         backgroundTitle="What's Next?"
         subTitle="I am currently looking for my fourth co-op placement for winter and summer of 2024."
       />
-      <div className="mt-44 md:mx-20 mx-10 divide-y">
+      <div className="md:mt-44 md:mx-20 mx-10 divide-y">
         <ContactInfo
           title="Get in touch"
           subtitle="Feel free to reach out to me!"
           colour="bg-purple-700"
           contact={
             <div>
-              <p className="md:text-2xl text-xl hidden md:block">
+              <p className="md:text-2xl text-lg hidden md:block">
                 Phone Number
               </p>
-              <p className="md:text-2xl text-xl md:hidden">Phone #</p>
+              <p className="md:text-2xl text-lg md:hidden">Phone #</p>
               <p>(613)-581-3076</p>
             </div>
           }
           contactOther={
             <div>
-              <p className="md:text-2xl text-xl">Email</p>
+              <p className="md:text-2xl text-lg">Email</p>
               <a href="mailto:kkhc99@gmail.com" className="hyperlink">
                 kkhc99@gmail.com
               </a>
@@ -52,7 +52,7 @@ const ContactLayout = () => {
           colour="bg-purple-700"
           contact={
             <div>
-              <p className="md:text-2xl text-xl">LinkedIn</p>
+              <p className="md:text-2xl text-lg">LinkedIn</p>
               <a
                 href="https://www.linkedin.com/in/kyle-chin-527959231/"
                 className="hyperlink"
@@ -65,7 +65,7 @@ const ContactLayout = () => {
           }
           contactOther={
             <div>
-              <p className="md:text-2xl text-xl">GitHub</p>
+              <p className="md:text-2xl text-lg">GitHub</p>
               <a
                 href="https://github.com/MoleXprof"
                 className="hyperlink"

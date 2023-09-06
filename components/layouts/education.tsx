@@ -32,7 +32,7 @@ const EducationLayout = () => {
         </div>
         <div>
           <Image
-            className="flex ml-48 mt-24 lg:opacity-10 lg:block"
+            className="md:flex ml-48 mt-24 lg:opacity-10 hidden lg:block"
             src="/images/carleton.png"
             alt="Carleton Ravens logo"
             width={350}
@@ -40,7 +40,7 @@ const EducationLayout = () => {
           />
         </div>
       </div>
-      <div className="md:ml-20 mx-10 md:mt-24 mt-8 text-lg max-w-3xl font-light">
+      <div className="md:ml-20 mx-10 md:mt-24 mt-8 text-md md:text-lg max-w-3xl font-light">
         <p>
           I am in my fourth year of my Bachelors of Computer Science at Carleton.
           With my co-op program adding an extra year to my studies, I am
@@ -49,7 +49,7 @@ const EducationLayout = () => {
           programming languages.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 grid-cols-1 md:mx-20 mx-10 mt-32">
+      <div className="grid md:grid-cols-2 grid-cols-1 md:mx-20 mx-10 mt-16 md:mt-32">
         <Image
           className="shadow-2xl"
           src="/images/hockey-intramurals.jpg"
@@ -67,7 +67,7 @@ const EducationLayout = () => {
             </h2>
           </div>
           <div className="text-right">
-            <p className="text-lg font-light mt-4">
+            <p className="text-md md:text-lg font-light mt-4">
               My friends and I won the Carleton Hockey Intramurals for the fall
               2022 semester.
             </p>

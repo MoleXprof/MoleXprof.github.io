@@ -17,7 +17,7 @@ const Card = ({ right, title, category, text }: CardProps) => {
             </div>
             <h3 className="font-bold text-4xl mt-3">{title}</h3>
           </div>
-          <p className="my-6 md:my-12 text-lg font-light text-right">{text}</p>
+          <p className="my-6 md:my-12 text-md md:text-lg font-light text-right">{text}</p>
         </div>
       ) : (
         <div className="md:mx-20 mx-10 mt-8 grid md:grid-cols-2 grid-cols-1">
@@ -29,7 +29,7 @@ const Card = ({ right, title, category, text }: CardProps) => {
               </div>
               <h3 className="font-bold text-4xl mt-3">{title}</h3>
             </div>
-            <p className="my-6 md:my-12 text-lg font-light text-right">
+            <p className="my-6 md:my-12 text-md md:text-lg font-light text-right">
               {text}
             </p>
           </div>
