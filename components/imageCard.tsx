@@ -11,8 +11,8 @@ type ImageCardProps = {
 
 const ImageCard = ({ image, link, text, description, subheader } : ImageCardProps) => {
   return (
-    <a href={link} className="group relative block bg-black" target="_blank">
-      <img
+    <a href={link} className="group relative block bg-black" target="_blank" rel="noreferrer">
+      <Image
         alt="image card"
         src={image}
         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"

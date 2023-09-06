@@ -53,7 +53,7 @@ const ExperienceLayout = () => {
           date="2022/09 - 2022/12"
           description=
           {<div>
-            I developed and fixed small front-end components based on the requests from renowned international institutions to keep them happy and loyal. Furthermore, I constructed new statically generated pages for the B2C website to help improve TutorOcean's SEO results to attract x10 more the potential individuals globally. Here are the following results
+            I developed and fixed small front-end components based on the requests from renowned international institutions to keep them happy and loyal. Furthermore, I constructed new statically generated pages for the B2C website to help improve SEO results to attract x10 more the potential individuals globally. Here are the following results
             (click <a className="hyperlink" href="https://tutorocean.com/topics" target="_blank" rel="noreferrer"> here </a> to view page and check out the related topics pages that I also worked on):
           </div>}
         />
