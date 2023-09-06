@@ -38,7 +38,7 @@ const Home = () => {
           typing
         />
         <div className="flex">
-          <div className="relative filter blur-xl ml-20 mt-32 absolute">
+          <div className="relative filter blur-xl ml-20 mt-32">
             <div className="absolute top-0 md:left-36 left-28 lg:w-72 w-48 lg:h-72 h-48 bg-orange-400 rounded-full mix-blend-multiply opacity-70 animate-blob"></div>
             <div className="absolute top-0 md:left-72 left-12 lg:w-72 w-48 lg:h-72 h-48 bg-yellow-300 rounded-full mix-blend-multiply opacity-70 animate-blob animation-delay-2000"></div>
             <div className="absolute -bottom-24 md:left-20 left-4 lg:w-72 w-48 lg:h-72 h-48 bg-pink-300 rounded-full mix-blend-multiply opacity-70 animate-blob animation-delay-5000"></div>

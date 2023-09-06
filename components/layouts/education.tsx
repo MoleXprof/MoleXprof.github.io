@@ -32,7 +32,7 @@ const EducationLayout = () => {
         </div>
         <div>
           <Image
-            className="flex ml-48 mt-24 lg:opacity-10 hidden lg:block"
+            className="flex ml-48 mt-24 lg:opacity-10 lg:block"
             src="/images/carleton.png"
             alt="Carleton Ravens logo"
             width={350}
