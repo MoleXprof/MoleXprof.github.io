@@ -19,12 +19,12 @@ const ProjectsLayout = () => {
             </Head>
             <Header currentTab={domain[1]} />
             <Hero
-                title="Recent Projects"
+                title="Projects"
                 backgroundTitle="Recent Projects"
                 titleClassName="text-pink-500"
                 backgroundColour="bg-pink-500"
             />
-            <div className="mt-24 mx-5 md:mx-20 grid gap-y-5 md:gap-y-0 md:grid-cols-2 mb-20 gap-x-5 md:gap-x-10">
+            <div className="mt-24 mx-10 md:mx-20 grid gap-y-5 md:gap-y-0 md:grid-cols-2 mb-20 gap-x-5 md:gap-x-10">
                 <ImageCard
                     image='/images/krew.png'
                     text='Krew Home Inspectors'

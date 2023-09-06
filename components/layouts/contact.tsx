@@ -35,13 +35,13 @@ const ContactLayout = () => {
                   Phone Number
                 </p>
                 <p className="md:text-2xl text-lg md:hidden">Phone #</p>
-                <p>(613)-581-3076</p>
+                <p className="text-sm md:text-md">(613)-581-3076</p>
               </div>
             }
             contactOther={
               <div>
                 <p className="md:text-2xl text-lg">Email</p>
-                <a href="mailto:kkhc99@gmail.com" className="hyperlink">
+                <a href="mailto:kkhc99@gmail.com" className="hyperlink text-sm md:text-md">
                   kkhc99@gmail.com
                 </a>
               </div>
@@ -55,7 +55,7 @@ const ContactLayout = () => {
                 <p className="md:text-2xl text-lg">LinkedIn</p>
                 <a
                   href="https://www.linkedin.com/in/kyle-chin-527959231/"
-                  className="hyperlink"
+                  className="hyperlink text-sm md:text-md"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -68,7 +68,7 @@ const ContactLayout = () => {
                 <p className="md:text-2xl text-lg">GitHub</p>
                 <a
                   href="https://github.com/MoleXprof"
-                  className="hyperlink"
+                  className="hyperlink text-sm md:text-md"
                   target="_blank"
                   rel="noreferrer"
                 >
