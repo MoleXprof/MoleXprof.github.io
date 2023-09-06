@@ -15,6 +15,8 @@ const ImageCard = ({ image, link, text, description, subheader } : ImageCardProp
         alt="image card"
         src={image}
         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+        width={1000}
+        height={1000}
       />
       <div className="relative p-4 sm:p-6 lg:p-8">
         <p className="text-sm font-medium uppercase tracking-widest text-pink-400">{subheader}</p>

@@ -26,7 +26,7 @@ const ProjectsLayout = () => {
             />
             <div className="mt-24 mx-5 md:mx-20 grid gap-y-5 md:gap-y-0 md:grid-cols-2 mb-20 gap-x-5 md:gap-x-10">
                 <ImageCard
-                    image='/images/the-climber.webp'
+                    image='/images/krew.png'
                     text='Krew Home Inspectors'
                     description="Website developed collaboratively with two of my friends. I worked strongly on the front-end of the website and used Next.js and TailwindCSS to create a simplistic website."
                     link="https://www.krewhomeinspectors.ca/"
@@ -34,7 +34,7 @@ const ProjectsLayout = () => {
                 />
 
                 <ImageCard
-                    image='/images/the-climber.webp'
+                    image='/images/narwhal.jpg'
                     text='NarwhalTypist'
                     description="Type racing game (in progress)"
                     subheader="Game"
