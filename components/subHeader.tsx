@@ -18,7 +18,7 @@ const SubHeader = ({
       <h2
         className={classnames(
           right ? "text-right mr-6" : "text-left ml-6",
-          "mt-56 font-bold md:text-5xl text-4xl text-gray-100"
+          "mt-32 md:mt-56 font-bold md:text-5xl text-4xl text-gray-100"
         )}
       >
         {backgroundTitle}

@@ -74,19 +74,17 @@ const ExperienceLayout = () => {
           right={false}
           title="Mobile App Developer"
           date="2022/05 - 2022/08"
-          description="I developed small front-end services for the Android and iOS TutorOcean mobile application to enhance UI quality. As well, I resolved minor bugs and issues on the iOS applications with SwiftUI to improve the overall user experience for customers"
+          description={
+            <div>
+              I developed small front-end services for the Android and iOS TutorOcean mobile application to enhance UI quality. As well, I resolved minor bugs and issues on the iOS applications with SwiftUI to improve the overall user experience for customers
+              (click <a className="hyperlink" href="https://apps.apple.com/ca/app/tutorocean/id1480876532" target="_blank" rel="noreferrer">here</a> to view the iOS Tutor Ocean App).
+            </div>
+          }
         />
-      </div>
-      <div className="font-light md:ml-20 mx-10 md:text-xl text-lg">
-        (click{" "}
-        <a className="hyperlink" href="https://apps.apple.com/ca/app/tutorocean/id1480876532" target="_blank" rel="noreferrer">
-          link
-        </a>{" "}
-        to view the iOS Tutor Ocean App).
       </div>
       <SubHeader
         title="Other Experiences"
-        backgroundTitle="Other Unrelated Jobs"
+        backgroundTitle="Other Experiences"
         colour="bg-cyan-500"
         right
       />
@@ -119,10 +117,10 @@ const ExperienceLayout = () => {
       <div className="mx-10 mt-6 mb-12 md:hidden grid grid-cols-1">
         {otherJobs.map((job, index) => (
           <div className="mt-6" key={index}>
-            <p className="text-2xl">{job.employer}</p>
-            <p className="text-4xl font-bold">{job.position}</p>
-            <p className="text-lg font-light">{job.date}</p>
-            {index != 3 && <div className="h-0.5 w-24 bg-azure-500 mt-6" />}
+            <p className="text-lg md:text-2xl">{job.employer}</p>
+            <p className="text-2xl md:text-4xl font-bold">{job.position}</p>
+            <p className="text-md md:text-lg font-light">{job.date}</p>
+            {index != 3 && <div className="h-0.5 w-24 bg-cyan-500 mt-6" />}
           </div>
         ))}
       </div>

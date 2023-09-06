@@ -57,7 +57,7 @@ const EducationLayout = () => {
           width={500}
           height={500}
         />
-        <div className="md:mt-40 mt-10 mb-72">
+        <div className="md:mt-40 mt-10 mb-16 md:mb-72">
           <div>
             <h2 className="text-right font-bold md:text-5xl text-4xl text-gray-100">
               Hockey Intramurals
