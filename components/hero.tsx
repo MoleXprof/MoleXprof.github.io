@@ -36,7 +36,7 @@ const Hero = ({
           </h2>
           <div
             className={classnames(
-              title === "Carleton University" ? "md:-mt-12 -mt-24" : "-mt-10"
+              title === "Carleton University" ? "md:-mt-12 -mt-30" : "-mt-10"
             )}
           >
             <h1
@@ -76,7 +76,7 @@ const Hero = ({
             </h2>
             <div
               className={classnames(
-                title === "Carleton University" ? "md:-mt-12 -mt-24" : "-mt-10"
+                title === "Carleton University" ? "md:-mt-20 -mt-12" : "-mt-10"
               )}
             >
               <h1
