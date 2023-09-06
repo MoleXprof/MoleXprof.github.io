@@ -122,7 +122,7 @@ export const headerOptions = [
   },
   {
     title: "Projects",
-    display: false,
+    display: true,
     href: "/projects",
   },
   {
