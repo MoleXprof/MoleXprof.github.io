@@ -2,6 +2,7 @@ import { useState } from "react";
 import { classnames } from "../utils";
 import { headerOptions } from "./constants/constants";
 import Image from "next/image";
+import { saveAs } from "file-saver";
 
 type HeaderProps = {
   currentTab: string;
@@ -10,8 +11,20 @@ type HeaderProps = {
 const Header = ({ currentTab }: HeaderProps) => {
   const [toggle, setToggle] = useState(false);
 
+  const saveResume = () => {
+    saveAs(
+      "https://molexprof.github.io/resume.pdf",
+      "kyle_resume.pdf"
+    )
+  }
+
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
+      <div className="ml-5 md:ml-10 bg-gray-300 py-2.5 font-bold px-5 rounded-md hover:bg-gray-200">
+        <button className="download-btn" onClick={saveResume}>
+          Resume
+        </button>
+      </div>
       <ul className="list-none md:flex hidden justify-end items-center flex-1">
         {headerOptions.map(
           (nav, index) =>
