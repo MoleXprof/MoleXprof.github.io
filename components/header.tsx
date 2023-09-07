@@ -20,7 +20,7 @@ const Header = ({ currentTab }: HeaderProps) => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <div className="ml-5 md:ml-10 bg-gray-300 py-2.5 font-bold px-5 rounded-md hover:bg-gray-200">
+      <div className="ml-5 md:ml-10 bg-gray-300 py-1.5 md:py-2.5 font-bold px-3 md:px-5 rounded-md hover:bg-gray-200 text-sm md:text-md">
         <button className="download-btn" onClick={saveResume}>
           Resume
         </button>
