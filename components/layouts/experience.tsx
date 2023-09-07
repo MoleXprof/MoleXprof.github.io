@@ -88,20 +88,6 @@ const ExperienceLayout = () => {
         colour="bg-cyan-500"
         right
       />
-      <div className="md:ml-20 ml-10">
-        <p className="font-light md:text-lg text-md">
-          <b className="font-bold">*</b>go to{" "}
-          <a
-            href="https://www.linkedin.com/in/kyle-chin-527959231/"
-            className="hyperlink"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>{" "}
-           to view full resume
-        </p>
-      </div>
       <div className="md:flex flex-row md:mx-20 mx-10 md:my-24 my-12 hidden">
         {otherJobs.map((job, index) => (
           <div className="flex flex-row" key={index}>
