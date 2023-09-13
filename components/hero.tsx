@@ -96,7 +96,7 @@ const Hero = ({
                 <div className="text-xl text-black md:mt-4 mt-3 md:text-3xl md:ml-2 -ml-8">
                 <Typewriter
                   options={{
-                    strings: ['Software Developer', 'Student', 'Chips Enthusiast'],
+                    strings: ['Software Developer', 'Student', 'Bouldering Enthusiast'],
                     autoStart: true,
                     loop: true,
                   }}
