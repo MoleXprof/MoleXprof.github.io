@@ -22,6 +22,21 @@ const ExperienceLayout = () => {
       </Head>
       <Header currentTab={domain[1]} />
       <Hero
+        topText="2024/01 - 2024/04"
+        title="RossVideo"
+        backgroundTitle="RossVideo"
+        subTitle="Co-op Experience"
+        titleClassName="bg-red-600 inline-block text-transparent bg-clip-text"
+        backgroundColour="bg-red-600"
+      />
+      <div className="mt-16 mb-48">
+        <JobText
+          right={false}
+          title="Software Developer - C++"
+          description="Working on a new UI with a React frontend and a C++ backend. Utilizing protobuf to transmit data from the backend to the frontend"
+        />
+      </div>
+      <Hero
         topText="2023/05 - 2023/08"
         title="RossVideo"
         backgroundTitle="RossVideo"
@@ -34,7 +49,6 @@ const ExperienceLayout = () => {
         <JobText
           right
           title="Test Automation Developer"
-          date="2023/05 - PRESENT"
           description="I developed and maintained API and UI test cases. I also helped create a new framework that applies OOP Principles."
         />
       </div>

@@ -3,7 +3,7 @@ import { classnames } from "../utils";
 type JobTextProps = {
   right: boolean;
   title: string;
-  date: string;
+  date?: string;
   description: any;
 };
 

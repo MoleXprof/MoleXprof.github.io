@@ -50,13 +50,22 @@ const EducationLayout = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 md:mx-20 mx-10 mt-16 md:mt-32">
-        <Image
-          className="shadow-2xl"
-          src="/images/hockey-intramurals.jpg"
-          alt="Carleton hockey intramurals champions"
-          width={500}
-          height={500}
-        />
+        <div className="space-y-5">
+          <Image
+            className="shadow-2xl"
+            src="/images/hockey-intramurals.jpg"
+            alt="Carleton hockey intramurals champions"
+            width={500}
+            height={500}
+          />
+          <Image
+            className="shadow-2xl"
+            src="/images/hockey-intramurals-2023.jpg"
+            alt="Carleton hockey intramurals champions"
+            width={500}
+            height={500}
+          />
+        </div>
         <div className="md:mt-40 mt-10 mb-16 md:mb-72">
           <div>
             <h2 className="text-right font-bold md:text-5xl text-4xl text-gray-100">
@@ -69,7 +78,7 @@ const EducationLayout = () => {
           <div className="text-right">
             <p className="text-md md:text-lg font-light mt-4">
               My friends and I won the Carleton Hockey Intramurals for the fall
-              2022 semester.
+              2022 and 2023 semesters.
             </p>
           </div>
         </div>
