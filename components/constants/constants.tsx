@@ -1,8 +1,8 @@
 export const headerOptions = [
   {
-    title: "About Me",
-    href: "#aboutme",
-    to: "aboutme"
+    title: "About",
+    href: "#about",
+    to: "about"
   },
   {
     title: "Education",

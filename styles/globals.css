@@ -18,5 +18,5 @@
 }
 
 .hyperlink {
-  @apply cursor-pointer text-pink-300 hover:text-pink-400;
+  @apply cursor-pointer text-pink-300 hover:text-pink-200;
 }
