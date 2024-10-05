@@ -17,9 +17,12 @@ const Experience = () => {
                 <h2 className="text-2xl md:text-5xl font-bold font-header">
                     {"Experience"}
                 </h2>
-                <p className="text-text-body text-sm md:text-xl">
-                    {"A list of previous and current jobs"}
-                </p>
+                <div className="flex items-center gap-1 md:gap-2">
+                    <p className="text-text-body text-sm md:text-xl">
+                        {"A list of previous and current jobs."}
+                    </p>
+                    <div className="border border-pink-300 flex-grow" />
+                </div>
             </div>
 
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-0">

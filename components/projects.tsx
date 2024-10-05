@@ -6,9 +6,13 @@ const Projects = () => {
             <h2 className="text-2xl md:text-5xl font-bold font-header">
                 {"Works"}
             </h2>
-            <p className="text-text-body text-sm md:text-xl">
-                {"A selection of recent projects"}
-            </p>
+
+            <div className="flex items-center gap-1 md:gap-2">
+                <p className="text-text-body text-sm md:text-xl">
+                {"A selection of recent projects."}
+                </p>
+                <div className="border border-pink-300 flex-grow" />
+            </div>
 
             <div className="py-5 grid gap-y-5 md:gap-y-0 md:grid-cols-2 gap-x-5">
                 <ImageCard

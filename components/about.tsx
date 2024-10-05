@@ -1,24 +1,16 @@
 const About = () => {
     return (
         <div className="w-full py-4 md:py-8 flex flex-col gap-10 md:gap-20" id="aboutme">
-            <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0">
-                <div className="flex flex-col gap-1 md:gap-2">
-                    <h2 className="text-2xl md:text-5xl font-bold font-header">
-                        {"Sports & Fitness"}
-                    </h2>
-                    <div className="flex h-full w-full justify-start">
-                        <div className="flex gap-0.5 md:gap-1.5">
-                            <div className="border-r border-2 md:border-4 border-pink-300" />
-                            <p className="text-text-body text-sm md:text-xl font-danfo">
-                                {"Passions"}
-                            </p>
-                        </div>
-                    </div>
+            <div>
+                <h2 className="text-2xl md:text-5xl font-bold font-header">
+                    {"Hobbies"}
+                </h2>
+                <div className="flex items-center gap-1 md:gap-2">
+                    <p className="text-text-body text-sm md:text-xl">
+                        {"How I spend my life."}
+                    </p>
+                    <div className="border border-pink-300 flex-grow" />
                 </div>
-
-                <p className="md:w-1/2 md:text-right text-xs md:text-base text-text-body">
-                    {"Ever since I was young, I've always loved playing sports. I have played hockey and soccer for as long as I can remember. I also love playing basketball, volleyball, and skiing. Due to the restrictions of the pandemic, I got into other sports such as golf and rock climbing."}
-                </p>
             </div>
 
             <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0">
@@ -41,7 +33,7 @@ const About = () => {
                 </p>
 
                 <div className="md:flex flex-col hidden gap-2 text-right">
-                    <h2 className="text-5xl font-bold font-header">
+                    <h2 className="text-4xl font-bold font-header">
                         {"Anime & Manga"}
                     </h2>
                     <div className="flex h-full w-full justify-end">
@@ -53,6 +45,26 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0">
+                <div className="flex flex-col gap-1 md:gap-2">
+                    <h2 className="text-2xl md:text-4xl font-bold font-header">
+                        {"Sports & Fitness"}
+                    </h2>
+                    <div className="flex h-full w-full justify-start">
+                        <div className="flex gap-0.5 md:gap-1.5">
+                            <div className="border-r border-2 md:border-4 border-pink-300" />
+                            <p className="text-text-body text-sm md:text-xl font-danfo">
+                                {"Passions"}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <p className="md:w-1/2 md:text-right text-xs md:text-base text-text-body">
+                    {"Ever since I was young, I've always loved playing sports. I have played hockey and soccer for as long as I can remember. I also love playing basketball, volleyball, and skiing. Due to the restrictions of the pandemic, I got into other sports such as golf and rock climbing."}
+                </p>
             </div>
         </div>
     );
