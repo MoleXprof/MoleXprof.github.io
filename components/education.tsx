@@ -37,7 +37,7 @@ const Education = () => {
                     <h3 className="text-lg font-semibold">
                         {"Carleton University"}
                     </h3>
-                    <p className="text-text-body text-sm">
+                    <p className="text-text-body text-sm italic">
                         {"SEP 2020 - PRESENT"}
                     </p>
                 </div>

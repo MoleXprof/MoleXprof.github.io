@@ -14,7 +14,7 @@ const Experience = () => {
     return (
         <div id="experience">
             <div className="py-4 md:py-8">
-                <h2 className="text-2xl md:text-5xl font-bold">
+                <h2 className="text-2xl md:text-5xl font-bold font-header">
                     {"Experience"}
                 </h2>
                 <p className="text-text-body text-sm md:text-xl">

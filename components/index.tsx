@@ -10,9 +10,9 @@ import Projects from "./projects";
 
 const Home = () => {
     return (
-        <div className="lg:px-48 px-10 bg-background-default text-text-default w-full h-min-screen !scroll-smooth">
+        <div className="lg:px-48 px-10 bg-background-default text-text-default w-full h-min-screen font-subheader">
             <Head>
-                <title>Kyle Chin</title>
+                <title>{"Kyle Chin"}</title>
                 <meta name="title" content="Kyle Chin" />
                 <meta
                     name="description"

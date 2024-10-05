@@ -11,6 +11,11 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        written: ["Caveat"],
+        header: ["Notable"],
+        subheader: ["Inter Tight"],
+        danfo: ["Danfo"],
+        code: ["Source Code Pro"]
       },
       animation: {
         blob: "blob 7s infinite",

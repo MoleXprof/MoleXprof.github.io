@@ -18,7 +18,7 @@ const Header = () => {
     }
 
     return (
-        <nav className="w-full flex py-6 justify-between items-center navbar">
+        <nav className="w-full flex py-6 justify-between items-center navbar" id="top">
             <div className="border border-text-body py-1.5 md:py-2.5 font-bold px-3 md:px-5 
                 rounded-md hover:bg-background-hover text-sm md:text-base cursor-pointer"
             >
