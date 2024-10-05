@@ -39,7 +39,8 @@ module.exports = {
       colors: {
         background: {
           default: "#161617",
-          hover: "#222224"
+          hover: "#222224",
+          button: "#303033"
         },
         text: {
           default: "#edeef0",
