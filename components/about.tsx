@@ -21,7 +21,7 @@ const About = () => {
                     <div className="flex h-full w-full justify-start">
                         <div className="flex gap-0.5">
                             <div className="border-r border-2 border-pink-300 font-danfo" />
-                            <p className="text-text-body text-sm">
+                            <p className="text-text-body text-sm font-danfo">
                                 {"Interests"}
                             </p>
                         </div>
