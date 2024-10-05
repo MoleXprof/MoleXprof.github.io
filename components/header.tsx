@@ -1,89 +1,82 @@
 import { useState } from "react";
 import { classnames } from "../utils";
 import { headerOptions } from "./constants/constants";
-import Image from "next/image";
 import { saveAs } from "file-saver";
+import { PiFileText } from "react-icons/pi";
+import { IoMdClose } from "react-icons/io";
+import { IoMdMenu } from "react-icons/io";
+import { Link } from 'react-scroll'
 
-type HeaderProps = {
-  currentTab: string;
-};
+const Header = () => {
+    const [toggle, setToggle] = useState(false);
 
-const Header = ({ currentTab }: HeaderProps) => {
-  const [toggle, setToggle] = useState(false);
+    const saveResume = () => {
+        saveAs(
+            "https://molexprof.github.io/resume.pdf",
+            "kyle_chin_resume.pdf"
+        )
+    }
 
-  const saveResume = () => {
-    saveAs(
-      "https://molexprof.github.io/resume.pdf",
-      "kyle_chin_resume.pdf"
-    )
-  }
-
-  return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <div className="ml-5 md:ml-10 bg-gray-300 py-1.5 md:py-2.5 font-bold px-3 md:px-5 rounded-md hover:bg-gray-200 text-sm md:text-md">
-        <button className="download-btn" onClick={saveResume}>
-          Resume
-        </button>
-      </div>
-      <ul className="list-none md:flex hidden justify-end items-center flex-1">
-        {headerOptions.map(
-          (nav, index) =>
-            nav.display && (
-              <li
-                key={index}
-                className={classnames(
-                  nav.title.toLowerCase() === currentTab.toLowerCase() ||
-                    (currentTab == "" && nav.title == "About Me")
-                    ? "font-bold"
-                    : "font-normal",
-                  "cursor-pointer text-base text-black ${index === headerOptions.length - 1 ? 'mr-0' : 'mr-10'} mr-10"
+    return (
+        <nav className="w-full flex py-6 justify-between items-center navbar">
+            <div className="border border-text-body py-1.5 md:py-2.5 font-bold px-3 md:px-5 
+                rounded-md hover:bg-background-hover text-sm md:text-base cursor-pointer"
+            >
+                <button className="download-btn flex gap-1 justify-center items-center" onClick={saveResume}>
+                    <PiFileText />
+                    {"Resume"}
+                </button>
+            </div>
+            
+            <ul className="list-none md:flex hidden justify-end items-center flex-1">
+                {headerOptions.map((nav, index) =>
+                    <li
+                        key={index}
+                        className={`cursor-pointer text-base hover:font-bold ${index === headerOptions.length - 1 ? 'mr-0' : 'mr-10'}`}
+                    >
+                        <Link
+                            href={nav.href}
+                            to={nav.to}
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            {nav.title}
+                        </Link>
+                    </li>
                 )}
-              >
-                <a href={nav.href}>{nav.title}</a>
-              </li>
-            )
-        )}
-      </ul>
+            </ul>
 
-      <div className="md:hidden flex flex-1 justify-end items-center">
-        <Image
-          src={toggle ? "/images/close.png" : "/images/menu.png"}
-          alt="menu"
-          className="w-7 h-7 mr-4 object-contain"
-          width={100}
-          height={100}
-          onClick={() => setToggle((prev) => !prev)}
-        />
-        <div
-          className={classnames(
-            toggle ? "flex" : "hidden",
-            `p-6 bg-gradient-to-r from-gray-200 to-gray-200 absolute top-16 right-0 mx-4 my-2 sidebar min-w-36`
-          )}
-        >
-          <ul className="list-none flex flex-col justify-start items-end">
-            {headerOptions.map(
-              (option, index) =>
-                option.display && (
-                  <a
-                    key={index}
-                    href={option.href}
-                    className={classnames(
-                      option.title.toLowerCase() === currentTab.toLowerCase() ||
-                        (currentTab == "" && option.title == "About Me")
-                        ? "font-bold"
-                        : "font-normal",
-                      "hover:bg-gray-100 text-midnight-500 px-3 py-2 text-sm font-medium"
-                    )}
-                  >
-                    {option.title}
-                  </a>
-                )
-            )}
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
+            {/* mobile view */}
+            <div className="md:hidden flex flex-1 justify-end items-center">
+                <div onClick={() => setToggle((prev) => !prev)}>
+                    {toggle ? <IoMdClose className="w-[20px] h-[20px]" /> : <IoMdMenu className="w-[20px] h-[20px]" />}
+                </div>
+        
+                <div className={classnames(
+                    toggle ? "flex" : "hidden", "p-6 absolute top-10 right-0 mx-4 sidebar min-w-36"
+                )}>
+                    <ul className="list-none flex flex-col justify-end items-end">
+                        {headerOptions.map(
+                        (nav, index) =>
+                            <li key={index} className={"font-semibold hover:font-bold px-1 py-2 text-sm cursor-pointer"}>
+                                <Link
+                                    href={nav.href}
+                                    to={nav.to}
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={() => setToggle((prev) => !prev)}
+                                >
+                                    {nav.title}
+                                </Link>
+                            </li>
+                        )}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    );
 };
 
 export default Header;

@@ -1,123 +1,43 @@
-import { classnames } from "../utils";
+import Image from "next/image";
 import Typewriter from 'typewriter-effect';
 
-type HeroProps = {
-  topText?: string;
-  title: string;
-  subTitle?: string;
-  text?: string;
-  titleClassName: string;
-  backgroundColour?: string;
-  backgroundTitle: string;
-  flip?: boolean
-  typing?: boolean
-};
-
-const Hero = ({
-  backgroundColour,
-  backgroundTitle,
-  topText,
-  title,
-  subTitle,
-  text,
-  titleClassName,
-  flip,
-  typing
-}: HeroProps) => {
+const Hero = () => {
   return (
-    <div>
-      {flip ? (
-        <div className="md:mr-20 text-midnight-500 text-right mr-10">
-          <p className="mt-24 text-lg md:text-2xl font-light md:mx-0">
-            {topText}
-          </p>
-          <h2 className="font-bold text-4xl md:text-6xl text-gray-100 ml-10 md:mx-0">
-            {backgroundTitle}
-          </h2>
-          <div
-            className={classnames(
-              title === "Carleton University" ? "md:-mt-12 -mt-30" : "-mt-10"
-            )}
-          >
-            <h1
-              className={classnames(
-                titleClassName,
-                "font-bold text-5xl md:text-7xl ml-10 md:mx-0"
-              )}
-            >
-              {title}
-            </h1>
-          </div>
-          <p className="md:mt-4 mt-3 md:text-3xl text-xl md:mx-0">
-            {subTitle}
-          </p>
-          {text && (
-            <p className="md:mt-12 mt-8 md:text-xl text-lg max-w-2xl font-light mx-10 md:mx-0">
-              {text}
-            </p>
-          )}
-          <div className="flex flex-row-reverse">
-            <div
-              className={classnames(
-                backgroundColour,
-                "md:h-3 h-2 md:w-20 w-16 mt-3 md:mx-0"
-              )}
+    <div className="flex items-center justify-center pt-[6rem] md:pt-[12rem] md:pb-[20rem] pb-[10rem]">
+        {/* <div className="absolute filter blur-xl">
+        <div className="absolute top-0 md:left-36 left-28 lg:w-72 w-48 lg:h-72 h-48 bg-bubbles-medium rounded-full mix-blend-multiply opacity-70 animate-blob"></div>
+        <div className="absolute top-0 md:left-72 left-12 lg:w-72 w-48 lg:h-72 h-48 bg-bubbles-large rounded-full mix-blend-multiply opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-24 md:left-20 left-4 lg:w-72 w-48 lg:h-72 h-48 bg-bubbles-small rounded-full mix-blend-multiply opacity-70 animate-blob animation-delay-5000"></div>
+        </div> */}
+
+        <div className="flex flex-col justify-center items-center gap-4 z-10">
+            <Image
+                src={"/images/headshot.png"}
+                alt={"Kyle Chin headshot photo"}
+                width={100}
+                height={100}
+                className={"rounded-full"}
             />
-          </div>
-          
+
+            <div className="flex flex-col justify-center items-center">
+                <h1 className="font-bold text-5xl md:text-8xl text-pink-300">{"Kyle Chin"}</h1>
+
+                <div className="flex text-xl md:text-3xl gap-2 pt-3 md:pt-2 pb-2 md:pb-4">
+                    <Typewriter
+                        options={{
+                            strings: ['Software Developer', 'Student', 'Bouldering Enthusiast'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </div>
+
+                <p className="w-3/4 md:w-1/2 text-center text-text-body text-sm md:text-xl">
+                    {"An ethusiatic programmer that is passionate about front-end web designs and is looking to further my technical skills."}
+                </p>
+            </div>
         </div>
-      ) : (
-          <div className="md:ml-20 text-midnight-500">
-            <p className="mt-24 text-lg md:text-2xl font-light mx-10 md:mx-0">
-              {topText}
-            </p>
-            <h2 className="font-bold mb-4 text-4xl md:text-6xl text-gray-100 ml-10 md:mx-0">
-              {backgroundTitle}
-            </h2>
-            <div
-              className={classnames(
-                title === "Carleton University" ? "md:-mt-20 -mt-12" : "-mt-10"
-              )}
-            >
-              <h1
-                className={classnames(
-                  titleClassName,
-                  "font-bold text-5xl md:text-7xl ml-10 md:mx-0"
-                )}
-              >
-                {title}
-              </h1>
-            </div>
-            <div className="flex flex-row">
-              <p className="md:mt-4 mt-3 md:text-3xl text-xl mx-10 md:mx-0">
-                {subTitle}
-              </p>
-              {typing ? (
-                <div className="text-xl text-black md:mt-4 mt-3 md:text-3xl md:ml-2 -ml-8">
-                <Typewriter
-                  options={{
-                    strings: ['Software Developer', 'Student', 'Bouldering Enthusiast'],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </div>
-              ) : ("")}
-            </div>
-            {text && (
-              <p className="md:mt-12 mt-8 md:text-xl text-md max-w-2xl font-light mx-10 md:mx-0">
-                {text}
-              </p>
-            )}
-            <div
-              className={classnames(
-                backgroundColour,
-                "md:h-3 h-2 md:w-20 w-16 mt-3 mx-10 md:mx-0"
-              )}
-            />
-          </div>
-      )}
-    </div>
+  </div>
   );  
 };
 
