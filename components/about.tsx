@@ -29,7 +29,7 @@ const About = () => {
                 </div>
 
                 <p className="md:w-1/2 text-xs md:text-base text-text-body">
-                    {"On my spare time, when I'm not playing sports, I'm watching anime and reading manga. I grew up watching the Pokémon and was later introduced to manga by friends and family members. It has become a big aspect of my life, since it is an something I thoroughly enjoy whenever I get free time."}
+                    {"In my free time, when I'm not playing sports, I enjoy watching anime and reading manga. I grew up watching Pokémon and was later introduced to manga by friends and family. It's become a significant part of my life, as it's something I deeply enjoy whenever I have the chance."}
                 </p>
 
                 <div className="md:flex flex-col hidden gap-2 text-right">
@@ -63,7 +63,7 @@ const About = () => {
                 </div>
 
                 <p className="md:w-1/2 md:text-right text-xs md:text-base text-text-body">
-                    {"Ever since I was young, I've always loved playing sports. I have played hockey and soccer for as long as I can remember. I also love playing basketball, volleyball, and skiing. Due to the restrictions of the pandemic, I got into other sports such as golf and rock climbing."}
+                    {"Since I was a kid, I've always had a passion for sports. I've been playing hockey and soccer for as long as I can remember, and I also enjoy basketball, volleyball, and skiing. During the pandemic, with restrictions in place, I picked up new activities like golf and rock climbing. Recently, I have picked up tennis and pickleball."}
                 </p>
             </div>
         </div>
