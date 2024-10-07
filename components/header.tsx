@@ -39,7 +39,7 @@ const Header = () => {
                             to={nav.to}
                             spy={true}
                             smooth={true}
-                            duration={500}
+                            duration={nav.duration}
                         >
                             {nav.title}
                         </Link>
@@ -65,7 +65,7 @@ const Header = () => {
                                     to={nav.to}
                                     spy={true}
                                     smooth={true}
-                                    duration={500}
+                                    duration={nav.duration}
                                     onClick={() => setToggle((prev) => !prev)}
                                 >
                                     {nav.title}
