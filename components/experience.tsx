@@ -12,7 +12,7 @@ const Experience = () => {
     }
 
     return (
-        <div id="experience">
+        <div className="autoVerticalScroll" id="experience">
             <div className="py-4 md:py-8">
                 <h2 className="text-2xl md:text-5xl font-bold font-header">
                     {"Experience"}
@@ -112,7 +112,7 @@ const Experience = () => {
                 </div>
             </div>
 
-            <div className="flex justify-between items-center py-10">
+            <div className="flex justify-between items-center py-10 autoAppear">
                 <div>
                     <h3 className="text-sm md:text-lg font-semibold">
                         {"To learn more"}

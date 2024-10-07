@@ -1,7 +1,7 @@
 const About = () => {
     return (
         <div className="w-full py-4 md:py-8 flex flex-col gap-10 md:gap-20" id="about">
-            <div>
+            <div className="autoVerticalScroll">
                 <h2 className="text-2xl md:text-5xl font-bold font-header">
                     {"Hobbies"}
                 </h2>
@@ -13,7 +13,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0">
+            <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0 autoRightHorizontalScroll">
                 <div className="flex flex-col gap-1 md:hidden">
                     <h2 className="text-2xl font-bold font-header">
                         {"Anime & Manga"}
@@ -47,7 +47,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0">
+            <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0 autoLeftHorizontalScroll">
                 <div className="flex flex-col gap-1 md:gap-2">
                     <h2 className="text-2xl md:text-4xl font-bold font-header">
                         {"Sports & Fitness"}

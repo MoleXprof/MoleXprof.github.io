@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Education = () => {
     return (
-        <div className="py-16 md:py-24" id="education">
+        <div className="py-16 md:py-24 autoAppear" id="education">
             {/* mobile view */}
             <div className="md:hidden flex items-start gap-1">
                 <Image

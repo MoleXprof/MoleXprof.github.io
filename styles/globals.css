@@ -9,14 +9,80 @@
 @tailwind utilities;
 
 @layer utilities {
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-  .animation-delay-5000 {
-    animation-delay: 5s;
-  }
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+    .animation-delay-5000 {
+        animation-delay: 5s;
+    }
 }
 
 .hyperlink {
-  @apply cursor-pointer text-pink-300 hover:text-pink-200;
+    @apply cursor-pointer text-pink-300 hover:text-pink-200;
+}
+
+.autoVerticalScroll {
+    animation: autoVerticalScrollAnimation linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes autoVerticalScrollAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.autoLeftHorizontalScroll {
+    animation: autoLeftHorizontalScrollAnimation linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes autoLeftHorizontalScrollAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.autoRightHorizontalScroll {
+    animation: autoRightHorizontalScrollAnimation linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+@keyframes autoRightHorizontalScrollAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.autoAppear {
+    animation: autoAppearAnimation linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes autoAppearAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

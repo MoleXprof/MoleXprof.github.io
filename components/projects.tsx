@@ -2,7 +2,7 @@ import ImageCard from "./imageCard";
 
 const Projects = () => {
     return (
-        <div className="py-5 md:py-10" id="projects">
+        <div className="py-5 md:py-10 autoVerticalScroll" id="projects">
             <h2 className="text-2xl md:text-5xl font-bold font-header">
                 {"Works"}
             </h2>
