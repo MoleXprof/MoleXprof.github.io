@@ -21,18 +21,17 @@ const Contact = () => {
                 </a>
             </div>
 
-            <div className="absolute rounded-full h-6 w-6 md:h-8 md:w-8 bg-background-hover flex items-center justify-center 
-            shadow-lg right-0 bottom-1 hover:font-bold cursor-pointer hover:bg-background-button">
-                <Link
-                    href={"#top"}
-                    to={"top"}
-                    spy={true}
-                    smooth={true}
-                    duration={1000}
-                >
-                    <IoChevronUpSharp />
-                </Link>
-            </div>
+            <Link
+                href={"#top"}
+                to={"top"}
+                spy={true}
+                smooth={true}
+                duration={1000}
+                className="absolute rounded-full h-6 w-6 md:h-8 md:w-8 bg-background-hover flex items-center justify-center 
+        shadow-lg right-0 bottom-1 hover:font-bold cursor-pointer hover:bg-background-button"
+            >
+                <IoChevronUpSharp />
+            </Link>
         </div>
     );
 };

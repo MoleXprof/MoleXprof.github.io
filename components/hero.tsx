@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-scroll'
 
 const Hero = () => {
   return (
@@ -47,10 +48,18 @@ const Hero = () => {
         </div>
 
         <div className="absolute text-text-body text-xs md:text-base left-[2rem] bottom-0 md:left-[3rem] font-written animate-bounce">
-            <p className="rotate-[340deg]">{"Psst...scroll down!"}</p>
-            <div className="rotate-90 mt-10">
-                <span aria-hidden="true" className="h-full font-bold"> &rarr;</span>
-            </div>
+            <Link
+                href="#about"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={600}
+            >
+                <p className="rotate-[340deg]">{"Psst...scroll down!"}</p>
+                <div className="rotate-90 mt-10">
+                    <span aria-hidden="true" className="h-full font-bold"> &rarr;</span>
+                </div>
+            </Link>
         </div>
   </div>
   );  
