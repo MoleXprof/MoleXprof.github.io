@@ -51,7 +51,7 @@ const Experience = () => {
 
                     <Job
                         title="Front-end Web Developer"
-                        date="SEP 2024 - PRESENT"
+                        date="SEP 2024 - DEC 2024"
                         tools={["React.js", "Redux.js", "Protobuf", "TailwindCSS"]}
                         type={JobType.PartTime}
                     />
