@@ -7,6 +7,7 @@ import Experience from "./experience";
 import Footer from "./footer";
 import Hero from "./hero";
 import Projects from "./projects";
+import Travels from "./travels";
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
             <Header />
             <Hero />
             <About />
+            <Travels />
             <Education />
             <Experience />
             <Projects />
