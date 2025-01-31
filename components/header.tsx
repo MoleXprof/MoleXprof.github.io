@@ -48,7 +48,7 @@ const Header = () => {
             </ul>
 
             {/* mobile view */}
-            <div className="md:hidden flex flex-1 justify-end items-center">
+            <div className="md:hidden flex flex-1 justify-end items-center z-10">
                 <div onClick={() => setToggle((prev) => !prev)}>
                     {toggle ? <IoMdClose className="w-[20px] h-[20px]" /> : <IoMdMenu className="w-[20px] h-[20px]" />}
                 </div>

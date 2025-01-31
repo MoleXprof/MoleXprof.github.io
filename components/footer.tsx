@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
     return (
         <div className="bg-background-default flex justify-between">
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
                 <a
                     href="https://github.com/MoleXprof"
                     className="hyperlink text-sm md:text-base"
