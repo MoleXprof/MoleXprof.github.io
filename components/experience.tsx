@@ -6,8 +6,8 @@ import { PiFileText } from "react-icons/pi";
 const Experience = () => {
     const saveResume = () => {
         saveAs(
-            "https://molexprof.github.io/resume.pdf",
-            "kyle_chin_resume.pdf"
+            "https://kyle-chin.vercel.app/resume.pdf",
+            "Kyle Chin Resume.pdf"
         )
     }
 
