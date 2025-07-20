@@ -18,7 +18,7 @@ type JobProps = {
 const Job = ({ date, title, tools, type, line = true }: JobProps) => {
   return (
     <div className="pl-1 md:pl-4 py-3 md:py-6 relative">
-        <div className="flex gap-4">
+        <div className="flex gap-3">
             <div className="pt-1 md:pt-2">
                 <FaCircle className="text-background-hover" />
                 {line ? <div className="absolute h-5/6 border-r border-2 border-background-hover -bottom-[14px] md:-bottom-[26px] left-[10px] md:left-[22px]" /> : null}
@@ -37,7 +37,7 @@ const Job = ({ date, title, tools, type, line = true }: JobProps) => {
                     {type}
                 </p>
             
-                <div className="flex gap-0.5 md:gap-2 pt-2">
+                <div className="flex gap-0.5 md:gap-1 pt-2">
                     {
                         tools.map((tool, index) => {
                             return (

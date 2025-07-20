@@ -34,7 +34,7 @@ const Hero = () => {
                 <div className="flex text-xl md:text-3xl gap-2 pt-3 md:pt-2 pb-2 md:pb-4 font-code">
                     <Typewriter
                         options={{
-                            strings: ['Software Developer', 'Student', 'Bouldering Enthusiast'],
+                            strings: ['Software Developer', 'Retired Intramural Champion', 'Bouldering Enthusiast'],
                             autoStart: true,
                             loop: true,
                         }}
@@ -42,7 +42,7 @@ const Hero = () => {
                 </div>
 
                 <p className="w-3/4 md:w-1/2 text-center text-text-body text-sm md:text-xl">
-                    {"An ethusiatic programmer that is passionate about front-end web designs and is looking to further my technical skills."}
+                    {"An ethusiatic programmer that is passionate about full stack development and is looking to further my technical skills."}
                 </p>
             </div>
         </div>

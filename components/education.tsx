@@ -23,10 +23,10 @@ const Education = () => {
                     </p>
 
                     <p className="text-xs text-text-body italic">
-                        {"SEP 2020 - PRESENT"}
+                        {"SEP 2020 - APR 2025"}
                     </p>
                     <p className="text-text-body text-xs">
-                        {"CGPA: 10.60/12"}
+                        {"CGPA: 10.36/12"}
                     </p>
                 </div>
             </div>
@@ -38,7 +38,7 @@ const Education = () => {
                         {"Carleton University"}
                     </h3>
                     <p className="text-text-body text-sm italic">
-                        {"SEP 2020 - PRESENT"}
+                        {"SEP 2020 - APR 2025"}
                     </p>
                 </div>
 
@@ -48,7 +48,7 @@ const Education = () => {
                             {"Bacherlor of Computer Science: Software Engineering Stream"}
                         </h3>
                         <p className="text-text-body text-sm">
-                            {"CGPA: 10.60/12"}
+                            {"CGPA: 10.36/12"}
                         </p>
                     </div>
 

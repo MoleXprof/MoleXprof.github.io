@@ -25,7 +25,39 @@ const Experience = () => {
                 </div>
             </div>
 
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-0">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-4 md:gap-0">
+                <div>
+                    <div className="flex gap-2 md:gap-4 items-center">
+                        <Image
+                            src={"/images/wbd.jpeg"}
+                            alt={`WBD logo`}
+                            width={50}
+                            height={50}
+                            className="hidden md:flex rounded-full"
+                        />
+
+                        <Image
+                            src={"/images/rossvideo.png"}
+                            alt={`WBD logo`}
+                            width={25}
+                            height={25}
+                            className="md:hidden rounded-full"
+                        />
+
+                        <h3 className="text-lg md:text-2xl font-semibold">
+                            {"Warner Bros. Discovery"}
+                        </h3>
+                    </div>
+
+                    <Job
+                        title="Software Developer I"
+                        date="MAY 2025 - Present"
+                        tools={["C++"]}
+                        type={JobType.FullTime}
+                        line={false}
+                    />
+                </div>
+                
                 <div>
                     <div className="flex gap-2 md:gap-4 items-center">
                         <Image
@@ -44,7 +76,7 @@ const Experience = () => {
                             className="md:hidden rounded-full"
                         />
 
-                        <h3 className="text-lg md:text-3xl font-semibold">
+                        <h3 className="text-lg md:text-2xl font-semibold">
                             {"RossVideo"}
                         </h3>
                     </div>
@@ -70,7 +102,7 @@ const Experience = () => {
                         type={JobType.Coop}
                         line={false}
                     />
-                </div>			
+                </div>
 
                 <div>
                     <div className="flex gap-2 md:gap-4 items-center">
@@ -90,7 +122,7 @@ const Experience = () => {
                             className="md:hidden rounded-full"
                         />
 
-                        <h3 className="text-lg md:text-3xl font-semibold">
+                        <h3 className="text-lg md:text-2xl font-semibold">
                             {"TutorOcean"}
                         </h3>
                     </div>

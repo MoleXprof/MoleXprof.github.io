@@ -8,6 +8,7 @@ import Footer from "./footer";
 import Hero from "./hero";
 import Projects from "./projects";
 import Travels from "./travels";
+import Films from "./films";
 
 const Home = () => {
     return (
@@ -26,6 +27,7 @@ const Home = () => {
             <Header />
             <Hero />
             <About />
+            <Films />
             <Travels />
             <Education />
             <Experience />
