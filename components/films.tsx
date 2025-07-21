@@ -14,27 +14,24 @@ const Films = () => {
                 </p>
             </div>
 
-            <div className="flex gap-4">
-                <div className="border border-text-body py-1.5 md:py-2.5 font-bold px-3 md:px-5 rounded-md hover:bg-background-hover text-xs md:text-base cursor-pointer">
-                    <Link 
-                        className="download-btn flex gap-1 justify-center items-center"
-                        href={"https://myanimelist.net/profile/MoleXprof"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <SiMyanimelist className="h-7 w-7" />
-                    </Link>
-                </div>
-                <div className="border border-text-body py-1.5 md:py-2.5 font-bold px-3 md:px-5 rounded-md hover:bg-background-hover text-xs md:text-base cursor-pointer">
-                    <Link 
-                        className="download-btn flex gap-1 justify-center items-center"
-                        href={"https://letterboxd.com/Xprof"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <FaLetterboxd className="h-7 w-7" />
-                    </Link>
-                </div>
+            <div className="flex gap-1 md:gap-4">
+                <Link
+                    className="download-btn flex gap-1 justify-center items-center border border-text-body py-1.5 md:py-2.5 font-bold px-3 md:px-5 rounded-md hover:bg-background-hover cursor-pointer"
+                    href={"https://myanimelist.net/profile/MoleXprof"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <SiMyanimelist className="h-[18px] md:h-7 w-4 md:w-7" />
+                </Link>
+
+                <Link 
+                    className="download-btn flex gap-1 justify-center items-center border border-text-body py-1.5 md:py-2.5 font-bold px-3 md:px-5 rounded-md hover:bg-background-hover cursor-pointer"
+                    href={"https://letterboxd.com/Xprof"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FaLetterboxd className="h-[18px] md:h-7 w-4 md:w-7" />
+                </Link>
             </div>
         </div>
     );

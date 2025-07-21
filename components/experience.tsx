@@ -154,12 +154,13 @@ const Experience = () => {
                     </p>
                 </div>
 
-                <div className="border border-text-body py-1.5 md:py-2.5 font-bold px-3 md:px-5 rounded-md hover:bg-background-hover text-xs md:text-base cursor-pointer">
-                    <button className="download-btn flex gap-1 justify-center items-center" onClick={saveResume}>
-                        <PiFileText />
-                        {"Resume"}
+                <button 
+                    className="download-btn flex gap-1 justify-center items-center border border-text-body py-1.5 md:py-2.5 font-bold px-3 md:px-5 rounded-md hover:bg-background-hover text-xs md:text-base cursor-pointer"
+                    onClick={saveResume}
+                >
+                    <PiFileText />
+                    {"Resume"}
                 </button>
-                </div>
             </div>
         </div>
     );
