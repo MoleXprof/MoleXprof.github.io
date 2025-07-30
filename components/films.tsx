@@ -5,12 +5,21 @@ import { FaLetterboxd } from "react-icons/fa6";
 const Films = () => {
     return (
         <div className="flex justify-between items-center py-10 autoAppear">
-            <div>
+            <div className="hidden md:block">
                 <h3 className="text-sm md:text-lg font-semibold">
                     {"Want to see what I've been watching?"}
                 </h3>
                 <p className="text-text-body text-xs md:text-sm">
                     {"Check out my MAL and Letterboxd profiles."}
+                </p>
+            </div>
+
+            <div className="md:hidden">
+                <h3 className="text-sm md:text-lg font-semibold">
+                    {"See what I've been watching"}
+                </h3>
+                <p className="text-text-body text-xs md:text-sm">
+                    {"Check out my profiles."}
                 </p>
             </div>
 
