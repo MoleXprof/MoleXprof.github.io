@@ -20,7 +20,6 @@ const Home = () => {
                     name="description"
                     content="Portfolio website of Kyle Chin"
                 />
-                {/* get a better logo */}
                 <link rel="shortcut icon" href="/images/headshot.png" />
             </Head>
 

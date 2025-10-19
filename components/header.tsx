@@ -28,6 +28,7 @@ const Header = () => {
                 </button>
             </div>
             
+            {/* desktop view */}
             <ul className="list-none md:flex hidden justify-end items-center flex-1">
                 {headerOptions.map((nav, index) =>
                     <li

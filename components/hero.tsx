@@ -5,12 +5,6 @@ import { Link } from 'react-scroll'
 const Hero = () => {
   return (
     <div className="flex items-center justify-center pt-[6rem] md:pt-[12rem] md:pb-[14rem] pb-[10rem] relative">
-        {/* <div className="absolute filter blur-xl">
-        <div className="absolute top-0 md:left-36 left-28 lg:w-72 w-48 lg:h-72 h-48 bg-bubbles-medium rounded-full mix-blend-multiply opacity-70 animate-blob"></div>
-        <div className="absolute top-0 md:left-72 left-12 lg:w-72 w-48 lg:h-72 h-48 bg-bubbles-large rounded-full mix-blend-multiply opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-24 md:left-20 left-4 lg:w-72 w-48 lg:h-72 h-48 bg-bubbles-small rounded-full mix-blend-multiply opacity-70 animate-blob animation-delay-5000"></div>
-        </div> */}
-
         <div className="flex flex-col justify-center items-center gap-4 z-10">
             <Image
                 src={"/images/headshot.png"}
